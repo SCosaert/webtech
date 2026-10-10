@@ -1,0 +1,38 @@
+:root {
+--color-papier: #fbf7f0;
+--color-ink: #2b2b2b;
+--color-muted: #6b6b6b;
+--color-accent: #b5451b;
+--color-zebra: #f1e9dc;
+--font-heading :Georgia;
+--font-text: Verdana;
+}
+
+body {
+    background-color: var(--color-papier);
+     color: var(--color-ink);
+    font-family: var(--font-text);
+
+}
+h1{color: var(--color-accent);
+font-family: var(--font-heading);
+} 
+.slogan {font-style: italic;
+    color:#6b6b6b
+}
+
+nav a {color:var(--color-accent); 
+    text-decoration: none;
+}
+
+h2{color:var(--color-ink);
+    font-family:var(--font-heading);
+}
+.intro {
+
+    
+}
+    
+
+
+    
