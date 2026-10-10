@@ -18,7 +18,7 @@ h1{color: var(--color-accent);
 font-family: var(--font-heading);
 } 
 .slogan {font-style: italic;
-    color:#6b6b6b
+    color: var(--color-muted);
 }
 
 nav a {color:var(--color-accent); 
@@ -28,11 +28,30 @@ nav a {color:var(--color-accent);
 h2{color:var(--color-ink);
     font-family:var(--font-heading);
 }
-.intro {
-
-    
+.intro {font-size: 1.25rem; 
 }
-    
+h3{color:var(--color-muted);
+    font-family:var(--font-heading);
+}    
+ul.kaart>li:nth-child(odd) {
+    background-color: var(--color-zebra);
+}
+.prijs{
+    color:var(--color-muted);
+    font-style: italic;
+}
+main a  {color:var(--color-accent);
+  
 
+}
+strong {color:var(--color-accent);    
+}
+footer {
+    color:var(--color-muted);
+    font-size: 0.75rem;
+    text-align: center;
+}
+footer a {
 
-    
+color:var(--color-accent)
+}
