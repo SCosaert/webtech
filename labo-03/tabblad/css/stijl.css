@@ -3,6 +3,41 @@
 /* === tokens === */
 :root {
 
+--color-roos: #ff816f;
+--color-geel:#ffd500;
 }
 
 /* === your rules === */
+body{
+background-color:#ff816f;
+color:black;
+font-style:Arial;
+margin: 5rem;
+
+/*  */
+
+}
+
+h1 {
+border-top: 0.25rem solid black;
+border-left: 0.25rem solid black;
+border-right: 0.25rem solid black;
+width:15rem;
+background-color:var(--color-geel);
+font-size: 1rem;
+padding: 0.75rem;
+padding-left:2rem;
+box-shadow: -0.25rem 0.25rem ;
+
+}
+h2{
+border: 0.25rem solid black;
+width: 35rem;
+background-color:white;
+padding:2.5rem;
+font-size:3rem;
+box-shadow: 0.25rem 0.25rem 0 0,-0.25rem 0.25rem;
+
+
+}
+
