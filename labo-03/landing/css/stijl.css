@@ -2,7 +2,100 @@
 
 /* === tokens === */
 :root {
+--color-banner:#c8b8ff;
+--color-link:#5551ff;
+--color-hero:#779cee;
+--color-hover:#333333;
+--color-black:#000000;
+--font-body:arial, sans-serif; 
 
 }
 
 /* === your rules === */
+body{
+    font-family:var(--font-body);
+    color:var(--color-black);
+}
+
+.banner{
+    background-color:var(--color-banner);
+text-align:center;
+padding:1rem;
+font-size:0.75rem;
+}
+.banner a{
+color:var(--color-link);
+
+}
+
+header{
+text-align:right;
+padding: 1.5rem;
+}
+nav ul{
+list-style:none;
+padding-left:0;
+margin:0;
+}
+nav li{
+display:inline-block;
+margin-left:2rem;
+
+}
+nav a{
+    color:var(--color-black);
+    text-decoration:none;
+    font-size:1rem;
+}
+.banner a:hover,
+.banner a:focus,
+nav a:hover,
+nav a:focus{
+   text-decoration:underline;
+}
+main {
+background-color:var(--color-hero);
+min-height: 80vh;
+padding: 4rem;
+}
+article{
+    display:inline-block;
+    width:50%;
+    vertical-align:top;
+    padding:2rem 6rem 2rem 0;
+}
+.afbeelding{
+    display:inline-block;
+    width:50%;
+    vertical-align:top;
+    padding:2rem;
+}
+
+img{
+width:70%;
+}
+.bovenkop{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+h1{
+font-size: 2.5rem;
+line-height:1.15;
+margin-bottom:1.5rem;
+}
+article p{
+line-height: 1.5;
+max-width: 24rem;
+margin-bottom:2rem
+}
+
+.knop{
+display:inline-block;
+background-color: var(--color-black);
+color:white;
+text-decoration: none;
+padding:0.75rem 1.75rem;
+border-radius: 0.75rem;
+
+}
