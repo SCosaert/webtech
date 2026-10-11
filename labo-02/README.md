@@ -33,8 +33,8 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 
 ## 4. De nabouw
 
-- Welke selector koos je voor de links in de navigatie, en waarom geen class?
-- Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+- Welke selector koos je voor de links in de navigatie, en waarom geen class? de nav a omdat het rechtstreeks het element aan spreekt.
+- Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak: focus en hover te laten werken zo als moet. had ze op de verkeerd gezet in plaats van ze aparte lijn te zeten
 
 ## 6. Je site
 
