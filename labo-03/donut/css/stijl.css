@@ -9,17 +9,18 @@
 }
 
 /* === your rules === */
+
 main{
 background-color:var(--color-white);
 background-color:var(--color-oranje);
 border: solid 0.75rem black;
 height: 90vh;
-width: 90vw;
-margin:5vh;
+width: 90vh;
+margin:5vh auto;
 
 
 }
-div{ 
+main > div{ 
 border: solid 0.75rem black;
 width: 70%;
 height: 70%;
