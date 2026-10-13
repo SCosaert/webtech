@@ -2,7 +2,50 @@
 
 /* === tokens === */
 :root {
-
+    --color-balk:#1f3a2e;
+    --color-tekst:#f3efe6;
+    --color-accent:#e6b53c;
+    
 }
 
 /* === your rules === */
+header{
+
+display:flex;
+padding:3vh;
+margin :1rem 2rem 2rem;
+background-color:var(--color-balk);
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {color:var(--color-accent);
+text-decoration: none;
+}
+
+nav {
+       list-style: none;
+}
+
+ul{display: flex ;
+gap: 0.5rem
+}
+
+nav a {
+    text-decoration: none;
+    color:var(--color-tekst);
+}
+
+li{list-style: none;}
+
+.actief{
+    background-color: var(--color-accent);
+    padding: 0.75rem 1.25rem 0.5rem 1.25rem;
+    border-radius: 10%;
+    color:var(--color-balk)
+    
+}
+
+
+
+
