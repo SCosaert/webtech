@@ -12,9 +12,38 @@
 }
 
 /* === your rules === */
+
 main{
-border: solid gray 2rem;
+display:grid;
+grid-template-columns: 3;
+grid-template-rows: 3;
 width: 70vh;
 height: 70vh;
-
+margin: 15vh auto;
+background-color:var(--color-blauw);
+padding: 2vh;
+gap: 2vh;
+}
+.lila{
+grid-column: 1/4;
+background-color: var(--color-lila);
+}
+.bruin{
+grid-column: 4/4;
+background-color: var(--color-bruin);}
+.geel{
+grid-column: 1/4,1/4;
+background-color:var(--color-geel);
+}
+.marine{
+grid-column: 4/4;
+background-color:var(--color-marine);
+}
+.olijf{
+grid-column: 1/4;
+background-color:var(--color-olijf);
+}
+.rood{
+grid-column: 4/4;
+background-color:var(--color-rood);
 }
