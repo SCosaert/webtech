@@ -2,7 +2,78 @@
 
 /* === tokens === */
 :root {
+--color-blauw:#1e5bd8 ;
+--color-roze:#e88bb4;
+--color-rood:#c51f2a  ;
+--color-oranje:#d98c1a ;
+--color-groen:#3b7a2a;
+--color-salie:#8fb89a;
+--color-paars:#7b4fa3;
+--color-grijs:#6b6b6b ;
 
 }
 
 /* === your rules === */
+
+main{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+display: flex;
+flex-wrap: wrap;
+gap: 1.5em;
+margin:1.5rem
+}
+blockquote{
+border-left: 0.5rem solid;
+}
+.citaat{
+flex: 1 1 18rem;
+
+}
+p{
+line-height:  1.5;
+font-weight: bold;
+padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+cite{
+font-weight:lighter;
+padding: 0.5rem 1rem 0.5rem 1rem;
+text-decoration: none;
+}
+.blauw{
+    color: var(--color-blauw);
+
+
+}
+.roze{
+color: var(--color-roze);
+
+
+}
+.rood{
+    color: var(--color-rood);
+
+
+}
+.oranje{
+    color: var(--color-oranje);
+
+
+}
+.groen{
+    color: var(--color-groen);
+
+
+}
+.salie{
+    color: var(--color-salie);
+
+}
+.paars{
+    color: var(--color-paars);
+
+}
+.grijs{color: var(--color-grijs);
+
+}
