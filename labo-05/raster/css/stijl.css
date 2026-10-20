@@ -2,7 +2,77 @@
 
 /* === tokens === */
 :root {
+--color-A:#e9493f;
+--color-B:#edd24a;
+--color-C:#072f55;
+--color-D:#52a51a;
+--color-E:#efaad9;
+--color-F:#a5f129;
+--color-G:#ebc47a;
+--color-H:#e8882c;
+--color-leter:#ffffff;
 
 }
 
 /* === your rules === */
+main{
+    height: 100vh;
+    padding: 2rem;
+}
+.raster{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr  ;
+grid-template-areas :
+"a . . b"
+"c d e f"
+"g . . h"
+;
+
+gap:2rem
+
+
+
+}
+.a{
+    text-align: right;
+    background-color: var(--color-A);
+    grid-area:a;
+}
+.b{
+    text-align: right;
+    background-color: var(--color-B);
+    grid-area:b;
+}
+.c{
+   text-align: right;
+    background-color: var(--color-C);
+grid-area:c;
+}
+.d{
+    background-color: var(--color-D);
+text-align: right;
+grid-area:d;
+}
+.e{
+    background-color: var(--color-E);
+text-align: right;
+grid-area:e;
+}
+.f{
+    background-color: var(--color-F);
+text-align: right;
+grid-area:f;
+}
+.g{
+    background-color: var(--color-G);
+text-align: right;
+grid-area:g;
+}
+.h{background-color: var(--color-H);
+text-align: right;
+grid-area:h;
+}
+
+
+
