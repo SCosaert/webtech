@@ -6,5 +6,31 @@
 }
 
 /* === base: narrow screens first === */
+main{
+
+display: grid;
+min-width: 400px;
+height: 100vh;
+}
+.rood {
+background-color: darkred;
+}
+.groen{background-color: green;}
+
+.geel{background-color:#ffcd00;}
+.blauw{background-color: blue;}
 
 /* === media queries: below the base rules === */
+@media (min-width: 37.5rem){ 
+main {
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+@media (min-width: 50rem){
+main {
+grid-template-columns: 1fr 1fr ;
+
+}
+
+}
