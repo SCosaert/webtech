@@ -2,9 +2,73 @@
 
 /* === tokens === */
 :root {
-
+    --color-papier:#f3f1ec;
+    --color-titel:#1f2933;
+    --color-grafiek:#2c6e8f;
+    --color-omzet:#c8742e;
+    --color-bezoekers:#3b7a2a;
+    --color-agenda:#6b4fa3;
+    --color-taken:#b2323a;
+    --color-weer:#e0b43a;
+    --color-weer_tekst:#1f2933;
+    --color-class:#ffffff;
 }
 
 /* === base: narrow screens first === */
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 1.4;
+color: var(--color-class);
+background-color: var(--color-papier);
 
+
+}
+.dashboard{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.tegel{padding: 1rem;
+border-radius:0.5rem ;
+min-height: 6rem;
+
+}
+
+.titel{background-color: var(--color-titel);line-height: 1.5rem;}
+.grafiek{background-color:var(--color-grafiek);}
+.omzet{background-color: var(--color-omzet);}
+
+.bezoekers{background-color: var(--color-bezoekers);}
+
+.agenda{background-color: var(--color-agenda);}
+
+.taken{background-color: var(--color-taken);}
+
+.weer{background-color: var(--color-weer);
+    color: var(--color-weer_tekst);
+}
 /* === media queries: below the base rules === */
+@media (min-width:50rem){
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+.titel{grid-column: 1/-1;}
+.grafiek{grid-column: 1/-1;}
+.weer{grid-column: 1/-1;}
+}
+@media(min-width:70rem){
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    height: 100vh;
+}
+.grafiek{
+grid-column: 1/3;
+grid-row:2/4;
+
+}
+
+}
