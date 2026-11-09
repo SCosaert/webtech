@@ -2,9 +2,116 @@
 
 /* === tokens === */
 :root {
+--color-papier:#1d1d1b;
+--color-affiche:#2554ab;
+--color-tekst:#fff8ee;
+--color-prijs:#ffc83d;
+--color-uitverkocht:#d6341c;
+--color-donker:#1d1d1b;
 
 }
 
 /* === base: narrow screens first === */
+body{
+background-color:var(--color-papier);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: grid;
+place-items: center;
+}
+.affiche{
 
+    background-color: var(--color-affiche);
+    color: var(--color-tekst);
+    width:min(28rem, 100% - 2rem); 
+    aspect-ratio:3/4;
+    margin: 2rem 1rem;
+    padding: clamp(1.5rem, 6vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    position: relative;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.05;
+    margin-bottom: 0.5rem;
+}
+.ondertitel{
+height: 0.875rem;
+text-transform: uppercase;
+letter-spacing: 0.1rem;
+}
+.sticker{
+    position:absolute ;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    height: clamp(4rem, 14vw, 7rem);
+    width: clamp(4rem, 14vw, 7rem);
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    
+}
+.prijs{
+    background-color: var(--color-prijs);
+    color:var(--color-donker);
+    border-radius: 50rem;
+    font-size: 1rem;
+    z-index: 2;
+    top: 2.5rem;
+    left: 2.5rem;
+
+}
+.datum{
+    background-color:#ffffff;
+    color: var(--color-donker);
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+}
+.uitverkocht{
+    background-color: var(--color-uitverkocht);
+    border-radius: 50rem;
+    z-index: 2;
+    top: 5.5rem;
+    left: 5.5rem;
+}
+.logo{
+    background-color: var(--color-donker);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    z-index: 1;
+    top: 4rem;
+    left: 4rem;
+}
 /* === media queries: below the base rules === */
+@media(min-width: 50rem){
+.logo{
+    top: auto;
+    left: auto;
+    bottom: 6rem;
+    right: 6rem;
+}
+.uitverkocht{
+  top: auto;
+    left: auto;
+    bottom: 3rem;
+    right: 3rem;
+}}
+@media(min-width: 60rem){
+.prijs{
+    top: 2rem;
+    left: auto;
+    right: 2rem;
+}
+.logo{ 
+    bottom: 2rem;
+    right: auto;
+    left: 2rem;}
+}
+.uitverkocht{
+    bottom: 2rem;
+    right: 2rem;
+}
