@@ -70,11 +70,11 @@ h1{
     font-weight: bold;
     line-height: 1.1;
     padding-bottom:var(--space-m);
-    font-family:
+    
 }
 .intro{
     font-size: var(--text-l);
-    font-family: ;
+    font-family:"Fraunces-italic";
     line-height: 1.4;
     padding-bottom: var(--space-m);
 }
