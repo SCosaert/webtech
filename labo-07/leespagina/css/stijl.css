@@ -1,12 +1,91 @@
 /* stijl.css - labo 7, leespagina (reset.css is linked before this file) */
 
 /* === fonts: one @font-face per file in fonts/ (7.2) === */
-
+@font-face {
+    font-family:"Fraunces-italic";
+    src: url(../fonts/fraunces-latin-wght-italic.woff2);
+    font-weight: 100 900;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Fraunces";
+    src: url(../fonts/fraunces-latin-wght-normal.woff2);
+    font-weight: 100 900;
+    font-display: swap;
+}
+@font-face {
+    font-family:"atkinson-italic";
+    src: url(../fonts/atkinson-hyperlegible-latin-400-italic.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family:"atkinson-400" ;
+    src: url(../fonts/atkinson-hyperlegible-latin-400-normal.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family:"atkinson-700" ;
+    src: url(../fonts/atkinson-hyperlegible-latin-700-normal.woff2);
+    font-display: swap;
+}
 /* === tokens: type scale, spacing scale, colour roles (7.4, 7.5, 7.7) === */
 :root {
-
+--text-s: 0.8rem;
+--text-m:1rem;
+--text-l:1.25rem;
+--text-xl:1.563;
+--text-xxl:1.953rem;
+--text-xxxl:2.441rem;
+--space-xs:0.25rem;
+--space-s:0.5rem;
+--space-m:1rem;
+--space-l:2rem;
+--space-xl:4rem;
+--color-page:hsl(40 30% 97%);
+--color-ink:hsl(230 25% 15%);
+--color-gedempt:hsl(230 10% 42%);
+--color-accent:hsl(15 70% 42%);
+--color-lijn:hsl(230 15% 85%);
 }
 
 /* === base === */
-
+body{
+display: grid;
+justify-content: center;
+padding: var(--space-xl)var(--space-m);
+font-size: var(--text-m);
+line-height: var(1.5);
+}
+p{padding-bottom: var(--space-m);}
+.bovenkop{
+    font-size: var(--text-s);
+    color: var(--color-accent);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom:var(--space-s);
+}
+h1{
+    font-size:var(--text-xxxl);
+    font-weight: bold;
+    line-height: 1.1;
+    padding-bottom:var(--space-m);
+    font-family:
+}
+.intro{
+    font-size: var(--text-l);
+    font-family: ;
+    line-height: 1.4;
+    padding-bottom: var(--space-m);
+}
+.meta{
+    font-size: var(--text-s);
+    color: var(--color-gedempt);
+    padding-bottom: var(--space-m);
+    border-bottom: solid 1px var(--color-lijn) 
+}
 /* === the article === */
+article{
+    max-width: 65vh;
+    
+}
