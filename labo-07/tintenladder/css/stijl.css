@@ -2,9 +2,57 @@
 
 /* === tokens === */
 :root {
-
+--color-papier:hsl(40 30% 97%);
+--color-ink:hsl(210 25% 12%);
+--color-gedempt:hsl(210 10% 42%);
+--hue:210;
+--font-kop:georgia;
 }
 
 /* === base === */
+body{
+display: grid;
+grid-template-rows: auto 1fr;
+height: 100vh;
+padding-left: 1rem;
+}
+header{}
+h1{
+    font-family: var(--font-kop);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    
+}
+p{
+    color: var(--color-gedempt);
+    font-size: 0.875rem;
+    padding-bottom: 2rem;
+}
+.trede{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.875rem;
+    padding-left:1rem;
+    padding-top: 1.25rem;
+
+}
+.ladder{
+    display: grid;
+    grid-template-rows: 1fr repeat(10);
+    
+}
+.trede:nth-child(+n +6){color: var(--color-papier);}
 
 /* === the ten steps: one rule per step === */
+.trede:nth-child(1){background-color: hsl(var(--hue) 55% 95%);}
+.trede:nth-child(2){background-color: hsl(var(--hue) 55% 85%);}
+.trede:nth-child(3){background-color: hsl(var(--hue) 55% 75%);}
+.trede:nth-child(4){background-color: hsl(var(--hue) 55% 65%);}
+.trede:nth-child(5){background-color: hsl(var(--hue) 55% 55%);}
+.trede:nth-child(6){background-color: hsl(var(--hue) 55% 45%);}
+.trede:nth-child(7){background-color: hsl(var(--hue) 55% 35%);}
+.trede:nth-child(8){background-color: hsl(var(--hue) 55% 25%);}
+.trede:nth-child(9){background-color: hsl(var(--hue) 55% 15%);}
+.trede:nth-child(10){background-color: hsl(var(--hue) 55% 5%);}
