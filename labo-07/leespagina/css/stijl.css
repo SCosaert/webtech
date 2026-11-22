@@ -33,7 +33,7 @@
 --text-s: 0.8rem;
 --text-m:1rem;
 --text-l:1.25rem;
---text-xl:1.563;
+--text-xl:1.563rem;
 --text-xxl:1.953rem;
 --text-xxxl:2.441rem;
 --space-xs:0.25rem;
@@ -52,11 +52,13 @@
 body{
 display: grid;
 justify-content: center;
-padding: var(--space-xl)var(--space-m);
+
 font-size: var(--text-m);
 line-height: var(1.5);
 }
-p{padding-bottom: var(--space-m);}
+p{
+    padding-bottom: var(--space-m);
+}
 .bovenkop{
     font-size: var(--text-s);
     color: var(--color-accent);
@@ -84,8 +86,43 @@ h1{
     padding-bottom: var(--space-m);
     border-bottom: solid 1px var(--color-lijn) 
 }
+h2{
+    font-size: var(--text-xl);
+    line-height: 1.2;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-s);
+}
+h3{
+    font-size: var(--text-l);
+    line-height: 1.3;
+    padding-top: var(--space-l);
+    padding-bottom: var(--space-xs);
+}
+blockquote{
+    font-family:"Fraunces-italic";
+    border-left: solid 4px var(--color-accent);
+    font-size: var(--text-l);
+    line-height: 1.4;
+    padding-left: var(--space-m);
+    padding-top: var(--space-l);
+    padding-bottom: var(--space-l); 
+}
+blockquote>footer{
+    font-family:"atkinson-400" ;
+    font-size: var(--text-s);
+    color: var(--color-gedempt);
+}
+.bron{
+    font-size: var(--text-s);
+    color: var(--color-gedempt);
+    border-top: solid 1px var(--color-lijn);
+    padding-top:var(--space-m) ;
+    margin-top: var(--space-xl);
+}
 /* === the article === */
 article{
     max-width: 65vh;
-    
+    background-color: var(--color-page);
+    padding: var(--space-xl)var(--space-m);
+    line-height: var(1.5);
 }
