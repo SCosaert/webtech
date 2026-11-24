@@ -4,35 +4,41 @@
 :root {
 
 }
-h2{
 
-background-color: red;
-width:20vw;
-height: 20vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-animation: vliegen;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-animation: alternate;
+body{
+    background-color:hsl(0 0% 100%) ;
+}
+.baan {
+    height: 100vh;
+}
+.loper{
+    height:25svh ;
+    width: 25svh;
+    animation:blok ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+   
+}
+@keyframes blok{50%{transform: translate(88vw, 0)}}
+
+.loper:nth-child(1){
+    background-color: hsl(165 34% 47%);
+}
+.loper:nth-child(2){
+    background-color: hsl(152 36% 57%);
+    animation-delay:50ms ;
+}
+.loper:nth-child(3){
+    background-color: hsl(187 44% 62%);
+    animation-delay:100ms ;
+}
+.loper:nth-child(4){
+    background-color: hsl(192 45% 77%);
+    animation-delay: 150ms;
 }
 
-@keyframes vliegen{
-25%{transform: translate(80vw,0vh);background-color: yellow;
-}
-50%{transform: translate(80vw,80vh);background-color: lime;
-
-
-}
-75%{transform: translate(0vw,80vh);background-color: orange;
-
-}
-100%{transform: translate(0vw, 0vh);
-}
-}
 /* === four lanes that fill the window === */
 
 /* === the runners: one animation, there and back; each one starts a little later (8.4) === */

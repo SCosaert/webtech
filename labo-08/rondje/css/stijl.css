@@ -11,15 +11,13 @@ background-color:hsl(47 20% 92%) ;
  max-height: 100vh;
     max-width: 100vh;
 }
-.piste{
-   
-}
+
 .blok {
     display: flex;
     justify-content: center;
     align-items: center;
-  width: 40vw;
-  height: 40vh;
+  width: 50vw;
+  height: 50vh;
   background-color:hsl(50 88% 61%);
   animation-name: vierkand;
   animation-duration: 8s;
@@ -36,16 +34,16 @@ background-color:hsl(47 20% 92%) ;
 
 @keyframes vierkand {
   25% {
-    transform: translate(60vw, 0);background-color:hsl(27 67% 48%);
+    transform: translateX(calc(100vw - 100%));background-color:hsl(27 67% 48%);
   }
   50% {
-    transform: translate(60vw, 60vh);background-color:hsl(8 72% 35%);
+    transform: translateX(calc(100vw - 100%));background-color:hsl(8 72% 35%);
   }
   75% {
-    transform: translate(0vw, 60vh);background-color:hsl(2 80% 25%);
+    transform: translateX(calc(100vw - 100%));background-color:hsl(2 80% 25%);
   }
   100% {
-    transform: translate(0vw, 0vh);
+    transform: translateX(calc(100vw - 100%));
   }
 }
 
