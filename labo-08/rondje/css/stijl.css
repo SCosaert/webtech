@@ -2,13 +2,52 @@
 
 /* === tokens: colours, one duration and one curve (8.1) === */
 :root {
-
+--curve: ease-out;
 }
 
-/* === the stage fills the window === */
 
-/* === the box and its animation (8.4) === */
+body{
+background-color:hsl(47 20% 92%) ;
+ max-height: 100vh;
+    max-width: 100vh;
+}
+.piste{
+   
+}
+.blok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 40vw;
+  height: 40vh;
+  background-color:hsl(50 88% 61%);
+  animation-name: vierkand;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+}
+/*animation-direction: alternate;
+/* === the stage fills the window === /
 
-/* === keyframes: four stops, a place and a colour each === */
+/ === the box and its animation (8.4) === /
+
+/ === keyframes: four stops, a place and a colour each === */
+
+@keyframes vierkand {
+  25% {
+    transform: translate(60vw, 0);background-color:hsl(27 67% 48%);
+  }
+  50% {
+    transform: translate(60vw, 60vh);background-color:hsl(8 72% 35%);
+  }
+  75% {
+    transform: translate(0vw, 60vh);background-color:hsl(2 80% 25%);
+  }
+  100% {
+    transform: translate(0vw, 0vh);
+  }
+}
+
 
 /* === reduced motion (8.5) === */
