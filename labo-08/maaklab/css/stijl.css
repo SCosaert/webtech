@@ -2,6 +2,20 @@
 
 /* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
 :root {
+--duur: 200ms;
+--curve: ease-out;
+--text-s: 0.8rem;
+--text-m:1rem;
+--text-l:1.25rem;
+--text-xl:1.563rem;
+--text-xxl:1.953rem;
+--text-xxxl:2.441rem;
+--space-xs:0.25rem;
+--space-s:0.5rem;
+--space-m:1rem;
+--space-l:2rem;
+--space-xl:4rem;
+--color-oppervlak:hsl(210 20% 97%);
 
 }
 

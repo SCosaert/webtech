@@ -4,7 +4,35 @@
 :root {
 
 }
+h2{
 
+background-color: red;
+width:20vw;
+height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+animation: vliegen;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation: alternate;
+}
+
+@keyframes vliegen{
+25%{transform: translate(80vw,0vh);background-color: yellow;
+}
+50%{transform: translate(80vw,80vh);background-color: lime;
+
+
+}
+75%{transform: translate(0vw,80vh);background-color: orange;
+
+}
+100%{transform: translate(0vw, 0vh);
+}
+}
 /* === four lanes that fill the window === */
 
 /* === the runners: one animation, there and back; each one starts a little later (8.4) === */
